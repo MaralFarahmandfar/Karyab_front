@@ -1,0 +1,47 @@
+    <title>سامانه آگهی‌های شغلی</title>
+    <link rel="stylesheet" href="agahi.css">
+</head>
+<body>
+    <!-- هدر -->
+    <header class="header">
+        <h1>سامانه آگهی‌های شغلی</h1>
+        <h3>بهترین فرصت‌ها برای ورود به دنیای حرفه‌ای</h3>
+    </header>
+
+    <!-- لیست آگهی‌های شغلی -->
+    <div class="job-list-container">
+        <h1>آگهی‌های شغلی</h1>
+        <div class="job-list" id="jobList">
+            <!-- این بخش به‌صورت داینامیک با جاوااسکریپت پر می‌شود -->
+        </div>
+    </div>
+
+    <!-- فرم ارسال رزومه -->
+    <div class="resume-modal" id="resumeModal">
+        <div class="modal-content">
+            <h3>ارسال رزومه به <span id="companyName"></span></h3>
+            <input type="file" id="resumeFile" />
+
+            <button onclick="submitResume()">ارسال</button>
+            <button onclick="closeModal()">بستن</button>
+        </div>
+    </div>
+
+    <!-- پنجره چت -->
+    <div class="chat-modal" id="chatModal">
+        <div class="modal-content">
+            <h3>چت با <span id="chatCompany"></span></h3>
+            <div class="chat-window" id="chatWindow"></div>
+            <input type="text" id="chatInput" placeholder="پیام خود را بنویسید" />
+            <button onclick="sendMessage()">ارسال</button>
+            <button onclick="closeChat()">بستن</button>
+        </div>
+    </div>
+
+   
+
+    <footer class="footer">
+        <p>&copy; 2024 سامانه آگهی‌های شغلی | همه حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="agahi.js"></script>

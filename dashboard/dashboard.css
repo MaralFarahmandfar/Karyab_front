@@ -1,0 +1,226 @@
+body{
+    background-color:  rgb(53, 39, 99);
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background-color:  rgb(53, 39, 99);
+    border: 2px solid rgb(67, 94, 107);
+    display: flex;
+    position: fixed;
+}
+/* header's features */
+#bellimg{
+    width: 80%;
+    height: 60%;
+    margin: 25%;
+    padding-right: 5px;
+}
+.bell{
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.bellbtn{
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+}
+#arrdownimg{
+    width: 70%;
+    height: 40%;
+    margin: 25%;
+    margin-top: 55%;
+    padding-right: 5px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+}
+.arrbtn{
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+}
+#profile{
+    width: 100%;
+    height: 60%;
+    margin-top: 10px;
+}
+#dashimg{
+    width: 90%;
+    height: 80%;
+    margin: 35%;
+}
+.dash{
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin-right: 58px;
+    position: absolute;
+}
+.dashbtn{
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;    
+}
+.logo{
+    width: 58px;
+    height: 56px;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+}
+/* wrap:content+sidebar */
+#wrap{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(53, 39, 99);
+    border: 2px solid rgb(67, 94, 107);
+    display: flex;
+    bottom: 0;
+    top: 60px;
+}
+#content{
+    width: 96%;
+    height: 100%; 
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgb(67, 94, 107); 
+}
+#contentFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#sidebar{
+    width: 4%;
+    height: 100%;
+    border: 2px solid rgb(67, 94, 107);
+    background-color: rgb(53, 39, 99);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 60px;
+    transition: width 0.5s;
+    justify-content: center;
+}
+/* responsive sidebar*/
+@media (min-width: 255px) {
+    #sidebar.open {
+        width: 35%;
+    }
+   
+    #sidebar ul li img{
+        width: 30px;
+    }
+}
+@media (max-width: 768px) {
+    #sidebar {
+        width: 30px; 
+    }
+}
+/* sidebar's features */
+ul{
+    padding:0 10%;
+    list-style: none;
+} 
+ul li{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li p{
+    font-size: large;
+    font:bold;
+    color: white;
+    white-space:nowrap ;
+    display: none;
+}
+#sidebar.open ul li p {
+    display: block;
+    margin-right: 10px;
+}
+#sidebar.open ul li{
+    justify-content: flex-start;
+}
+.btn{
+    width: 100%;
+    background: none; 
+    border: none; 
+    padding: 0; 
+    margin: 0; 
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center;
+    justify-content: flex-start;    
+}
+#sidebar ul li:hover{
+    background-color: rgb(199, 207, 211); 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+#sidebar ul li:hover p {
+    color: #000;
+    transition: color 0.3s ease;
+}
+.a{
+    display: inline-flex;
+    text-decoration: none;
+}
+/* notification box */
+#notificationBox {
+    position: absolute;
+    top: 45px; 
+    left: 10px; 
+    width: 200px;
+    background-color: rgb(136, 152, 161);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 7px;
+    z-index: 1000;
+}
+#notificationBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#notificationBox ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.visible {
+    display: block;
+}

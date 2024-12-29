@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karyab</title>
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="bell">
+            <button class="bellbtn"><img id="bellimg" src="..\icons\bell.svg"></button>
+        </div>
+        <div class="arrow">
+            <button class="arrbtn"><img id="arrdownimg" src="..\icons\arrow-down.svg"></button>
+        </div>
+        <div>
+            <img id="profile" src="..\icons\profile.svg">
+        </div>
+        <div class="dash" >
+            <button  class="dashbtn" id="toggleSidebar"><img id="dashimg" src="..\icons\dashboard.svg"></button>  
+        </div>
+        <div class="logo">
+            <img src="..\icons\logo.webp">
+        </div>
+    </div>
+
+    <div id="notificationBox" class="hidden">
+        <h3 dir="rtl">پیام‌های جدید </h3>
+        <ul>
+            <li> خوش آمدید</li>
+            <li> قوانین</li>
+        </ul>
+    </div> 
+    
+    <div id="wrap">
+        <div id="content">
+            <iframe id="contentFrame" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+        <div id="sidebar">
+            <ul dir="rtl" >
+                <li><button class="btn" id="btn" data-url="..\home\home.html">
+                   <img id="home" src="..\icons\home.svg"><p>صفحه اصلی </p>
+                </button></li>
+                <li><button class="btn" id="btn" data-url="resume.html">
+                    <img id="listdash" src="..\icons\list-dash.svg"><p>رزومه </p>
+                </button></li>
+                <li><button class="btn" id="btn" data-url="../agahi/agahi.html">
+                    <img id="calendar" src="..\icons\calendar.svg"><p>آگهی ها </p>
+                </button></li>
+                <li><button class="btn" id="btn" data-url="../natayej/natayej.html">
+                    <img id="eye" src="..\icons\eye.svg"><p>نتایج </p>
+                </button></li>
+                <li><button class="btn">
+                    <a class="a" href="..\login/login.html"><img id="exit" src="..\icons\exit.svg"><p>خروج </p></a>
+                </button></li>  
+            </ul> 
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

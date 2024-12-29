@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(53, 39, 99);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+/* logo+name */
+.logo{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+#logo{
+    width: 80px;
+    height: 80px; 
+    border-radius: 50%;
+    padding: 10px;
+}
+.karyab{
+    font-size:xxx-large;
+    color: white;
+    padding-top: 3px;
+    font-family:'sans-serif';
+}
+/* buttons and photo */
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#photo{
+    width: 550px;
+    height: 350px;
+    border: 2px solid rgb(67, 94, 107);
+    border-radius: 7%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btns{
+    width: 550px;
+    height: 350px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    margin-right: auto;
+    border: 2px solid rgb(67, 94, 107);
+    border-radius: 7%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:white ;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+    background-color: rgb(53, 39, 99);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 40%;
+    border: none;
+    margin: 10px;
+    font-family:'sans-serif';
+}
+.matn{
+
+    font-size: xx-large;
+    color: rgb(12, 71, 139);
+    padding-right: 15px;
+    text-align: center;
+    font-family:'sans-serif';
+}
+
+ul li{
+    font-size: large;
+    color: rgb(12, 71, 139);
+    padding-right: 15px;
+    text-align: center;
+    font-family:'sans-serif';
+    padding: 0;
+}
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 300px;
+    }
+    #photo {
+        width: 100%;
+        height: auto;
+    }
+    .btns {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+}
