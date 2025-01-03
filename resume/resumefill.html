@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فرم رزومه</title>
+  <link rel="stylesheet" href="resumefill.css">
+</head>
+<body dir="rtl">
+
+  <div class="form-container">
+    <h1>فرم اطلاعات رزومه</h1>
+    <form action="#" method="POST">
+      <div class="form-section">
+        <label for="name">نام:</label>
+        <input type="text" id="name" name="name" class="required">
+      </div>
+
+      <div class="form-section">
+        <label for="birthdate">تاریخ تولد:</label>
+        <input type="date" id="birthdate" name="birthdate" class="required">
+      </div>
+
+      <div class="form-section">
+        <label for="email">ایمیل:</label>
+        <input type="email" id="email" name="email" class="required">
+      </div>
+
+      <div class="form-section">
+        <label for="phone">شماره تماس:</label>
+        <input type="tel" id="phone" name="phone" class="required">
+      </div>
+
+      <div class="form-section">
+        <label for="address">آدرس:</label>
+        <input type="text" id="address" name="address" class="required">
+      </div> 
+
+      <div class="form-section">
+        <label for="summary">خلاصه رزومه:</label>
+        <textarea id="summary" name="summary" rows="4"></textarea>
+      </div>
+
+      <div class="form-section">       
+            <label for="skills">مهارت‌ها:</label>
+            <div class="skillfill">
+                <input id="skills" name="skills" class="required"></input>
+                <button class="add" onclick="addWord()" type="button">افزودن</button>
+            </div>
+            <ul id="wordList">
+                <!-- کلمات اضافه شده اینجا نمایش داده می‌شوند -->
+            </ul>           
+      </div>
+
+      <div class="form-section">
+        <label for="education">سوابق تحصیلی:</label>
+        <div class="eduinfo">
+            <input type="text" id="degree" placeholder="مدرک" class="required">
+            <input type="text" id="major" placeholder="گرایش" class="required">
+            <input type="text" id="uni" placeholder="موسسه/دانشگاه" class="required">
+            <input type="text" id="eduyear" placeholder="سال تحصیل" class="required"> 
+            <button class="add" onclick="addeduinfo()" type="button">افزودن</button> 
+        </div>
+        <ul id="eduList">
+            <!-- کلمات اضافه شده اینجا نمایش داده می‌شوند -->
+        </ul>
+      </div>
+
+      <div class="form-section">
+        <label for="work-experience">سوابق شغلی:</label>
+        <div class="work-experienceinfo">
+            <input type="text" id="position" placeholder="سمت">
+            <input type="text" id="company" placeholder="نام شرکت">
+            <input type="text" id="exyear" placeholder="مدت">
+        </div>
+        <input type="text" id="tasks" class="workexperienceinfo" rows="4" placeholder="وظایف و دستاورد ها"> 
+        <button class="add" onclick="addworkexperienceinfo()" type="button">افزودن</button>
+        <p id="message"></p>
+      </div>
+
+      <div class="form-section">
+        <label for="languages">زبان‌ها:</label>
+        <input type="text" id="language" placeholder="زبان">
+        <div class="languagesinfo">
+          <input type="text" id="reading" placeholder="مهارت خواندن" class="required" list="mylist">
+          <datalist id="mylist">
+            <option>خوب</option>
+            <option>خیلی خوب</option>
+            <option>متوسط</option>
+            <option>بد</option>
+            <option>خیلی بد</option>
+          </datalist>
+          <input type="text" id="writing" placeholder="مهارت نوشتن" class="required" list="mylist">
+          <input type="text" id="speaking" placeholder="مهارت گفتاری" class="required" list="mylist">
+          <input type="text" id="listening"  placeholder="مهارت شنیداری" class="required" list="mylist"> 
+           
+      </div>
+      <button class="add" onclick="addlanguagesinfo()" type="button">افزودن</button>
+      <ul id="languagesList">
+          <!-- کلمات اضافه شده اینجا نمایش داده می‌شوند -->
+      </ul>
+      </div>
+
+      <div class="form-section">
+        <label for="courses">دوره‌ها و گواهینامه‌ها:</label>
+        <div class="coursesinfo">
+          <input type="text" id="course"  placeholder="مدرک">
+          <input type="text" id="institution"  placeholder="موسسه">
+          <input type="text" id="month" placeholder="ماه">
+          <input type="text" id="courseyear" placeholder="سال"> 
+          
+        </div>
+        <button class="add" onclick="addcoursesinfo()" type="button">افزودن</button> 
+        <ul id="coursesList">
+            <!-- کلمات اضافه شده اینجا نمایش داده می‌شوند -->
+        </ul>
+      </div>
+
+      <div class="form-section">
+        <label for="research">تحقیقات:</label>
+        <div class="researchsinfo">
+          <input type="text" id="title" placeholder="عنوان">
+          <input type="text" id="publisher" placeholder="ناشر">
+          <input type="text" id="researchyear" placeholder="سال">
+          <input type="text" id="link" placeholder="لینک مرتبط"> 
+          
+        </div>
+        <button class="add" onclick="addresearchinfo()" type="button">افزودن</button> 
+        <ul id="researchList" class="list">
+            <!-- کلمات اضافه شده اینجا نمایش داده می‌شوند -->
+        </ul>
+      </div>
+
+      <div class="form-section">
+        <label for="projects">پروژه‌ها:</label>
+        <div class="projectsinfo">
+          <input type="text" id="projecttitle" placeholder="عنوان">
+          <input type="text" id="entrepreneur" placeholder="درخواست کننده">
+          <input type="text" id="projectyear" placeholder="سال">
+          <input type="text" id="projectmonth" placeholder="ماه">
+        </div>
+        <button class="add" onclick="addprojectsinfo()" type="button">افزودن</button> 
+        <ul id="projectsList" class="list">
+            <!-- کلمات اضافه شده اینجا نمایش داده می‌شوند -->
+        </ul>
+      </div>
+
+      <div class="form-section">
+        <label for="honors">افتخارات:</label>
+        <div class="honorsinfo">
+          <input type="text" id="honor" placeholder="افتخار">
+          <input type="text" id="honoryear" placeholder="سال">
+          <input type="text" id="honormonth" placeholder="ماه">
+        </div>
+        <button class="add" onclick="addhonorsinfo()" type="button">افزودن</button> 
+        <ul id="honorsList" class="list">
+            <!-- کلمات اضافه شده اینجا نمایش داده می‌شوند -->
+        </ul>
+      </div>
+
+      <div class="form-section">
+        <button type="button" id="activaterequired"  class="submit-btn">ثبت اطلاعات</button>
+      </div>
+    </form>
+  </div>
+
+<script src="resumefill.js"></script> 
+</body>
+</html>

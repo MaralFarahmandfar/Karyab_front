@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body dir="rtl">
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="image/download (1).png" alt="user avatar">
+            </div>
+            <div class="profile-details">
+                <div class="intro">
+                    <h2>امین سعیدی نژاد</h2>
+                    <h4>UI/UX Designer</h4>
+                    <div class="social">
+                        <a href="#"><img src="logo/facebook.png" alt=""></a>
+                        <a href="#"><img src="logo/whatsapp.png" alt=""></a>
+                        <a href="#"><img src="logo/dribbble.png" alt=""></a>
+                        <a href="#"><img src="logo/linkedin.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="icon" id="content" onmouseover="changeText()" onmouseout="resetText()">شغل</div>
+                    
+                        <div class="icon" id="content1" onmouseover="changeText1()" onmouseout="resetText1()">تعداد ازمون های داده شده</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--about =section--->
+        <form action="">
+            <div class="header">
+                <h1 style="font-family: 'MyFont', serif;" >تنظیمات عمومی</h1>
+            </div>
+            <div class="spec">
+                <div class="form-group">
+                    <label for="">نام کاربری</label>
+                    <input type="text" class="form-control" name="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="">ایمیل</label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="">رمز عبور</label>
+                    <input type="password" class="form-control" name="password" required>
+                </div>
+
+                <button type="button" class="btn" onclick="validateForm()">ثبت تغییرات</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function changeText(){
+            document.getElementById('content').innerHTML = "برنامه نویس"
+        }
+        function resetText(){
+            document.getElementById('content').innerHTML = "شغل"
+        }
+        function changeText1(){
+            document.getElementById('content1').innerHTML = "5"
+        }
+        function resetText1(){
+            document.getElementById('content1').innerHTML = "تعداد ازمون های داده شده"
+        }
+
+        
+
+    function validateForm() {
+        const form = document.querySelector('.spec');
+        const Name = form.querySelector('input[name="Name"]').value.trim();
+        const email = form.querySelector('input[name="email"]').value.trim();
+        const password = form.querySelector('input[name="password"]').value.trim();
+
+        if (!Name) {
+            alert('لطفاً نام را وارد کنید');
+            return false;
+        }
+
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!email.match(emailPattern)) {
+            alert('لطفاً ایمیل معتبر وارد کنید');
+            return false;
+        }
+
+        if (password.length < 6) {
+            alert('رمز عبور باید حداقل 6 کاراکتر باشد');
+            return false;
+        }
+
+        alert('تغییرات با موفقیت ثبت شد!');
+
+        // انتقال به صفحه دیگر در صورت موفقیت
+        window.location.href = "../dashboard/dashboard.html";
+        return false;
+    }
+
+    </script>
+</body>
+</html>

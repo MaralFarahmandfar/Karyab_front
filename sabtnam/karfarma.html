@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم ثبت‌ نام</title>
+    <link rel="stylesheet" href="sabtnam.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>فرم ثبت‌ نام</h1>
+        <form id="registrationForm" onsubmit="return validateForm()">
+    
+            <label for="coName">نام سازمان یا شرکت:</label>
+            <input type="text" id="coName" name="coName" required>
+
+            <label for="size">اندازه سازمان یا شرکت:</label>
+            <select id="size" name="size" required>
+                <option value="">انتخاب کنید</option>
+                <option value="small">کوچک</option>
+                <option value="medium">متوسط</option>
+                <option value="larg">بزرگ</option>
+            </select>
+
+            <label for="email">ایمیل سازمان یا شرکت:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">رمز عبور:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="province">استان:</label>
+            <input type="text" id="province" name="province" required>
+
+            <label for="city">شهر:</label>
+            <input type="text" id="city" name="city" required>
+
+            <button type="submit">ثبت‌ نام</button>
+        </form>
+    </div>
+
+    <script src="karfarma.js"></script>
+</body>
+</html>

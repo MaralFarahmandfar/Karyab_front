@@ -12,27 +12,39 @@ document.addEventListener('click', (event) => {
     }
 });
 
-//برای باز و بسته شدن نوتیف باکس
+//برای باز و بسته شدن نوتیف و پروفایل باکس
 const bellButton = document.querySelector('.bellbtn');
 const notificationBox = document.getElementById('notificationBox');
-// افزودن رویداد کلیک به دکمه زنگوله
-bellButton.addEventListener('click', () => {
-    if (notificationBox.classList.contains('hidden')) {
-        notificationBox.classList.remove('hidden');
-        notificationBox.classList.add('visible'); 
+
+const profButton = document.querySelector('.arrbtn');
+const profileBox = document.getElementById('profileBox');
+
+function toggleVisibility(element, hiddenClass, visibleClass,btn) {
+    if (element.classList.contains(hiddenClass)) {
+        element.classList.remove(hiddenClass);
+        element.classList.add(visibleClass);
     } else {
-        notificationBox.classList.remove('visible'); 
-        notificationBox.classList.add('hidden'); 
+        element.classList.remove(visibleClass);
+        element.classList.add(hiddenClass);
     }
-});
-// بستن جعبه وقتی بیرون از آن کلیک می‌شود
-document.addEventListener('click', (event) => {
-    if (!notificationBox.contains(event.target) && !bellButton.contains(event.target)) {
-        notificationBox.classList.remove('visible');
-        notificationBox.classList.add('hidden');
-    }
+    // بستن جعبه وقتی بیرون از آن کلیک می‌شود
+    document.addEventListener('click', (event) => {
+        if (!element.contains(event.target) && !btn.contains(event.target)) {
+            element.classList.remove(visibleClass);
+            element.classList.add(hiddenClass);
+        }
+    });
+}
+//اضافه کردن رویداد به باتن ها
+bellButton.addEventListener('click', () => {
+    toggleVisibility(notificationBox, 'hidden', 'visible',bellButton);
 });
 
+profButton.addEventListener('click', () => {
+    toggleVisibility(profileBox, 'hide', 'vsb',profButton);
+});
+
+//نمایش در کانتنت
 document.addEventListener("DOMContentLoaded", () => {
     const iframe = document.getElementById("contentFrame");
     const defaultPage = "../home/home.html"; // مسیر صفحه اصلی
@@ -51,3 +63,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+

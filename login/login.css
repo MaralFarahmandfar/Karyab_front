@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/msuighur.ttf') format('truetype');
+  }
 body{
     background-color: rgb(53, 39, 99);
     margin: 0;
@@ -25,10 +29,10 @@ body{
     padding: 10px;
 }
 .karyab{
-    font-size:xxx-large;
     color: white;
     padding-top: 3px;
-    font-family:'sans-serif';
+    font-size: 50px;
+    font-family: 'MyFont', serif;
 }
 /* buttons and photo */
 .main{
@@ -40,6 +44,7 @@ body{
     max-width: 1200px;
     margin-top: auto;
     margin-bottom: auto;
+    font-family:'MyFont', serif;
 }
 #photo{
     width: 550px;
@@ -69,7 +74,7 @@ body{
     cursor: pointer; 
     display: inline-flex; 
     align-items: center;
-    font-size: large;
+    font-size: 20px;
     justify-content: center;
     background-color: rgb(53, 39, 99);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -77,23 +82,17 @@ body{
     border-radius: 40%;
     border: none;
     margin: 10px;
-    font-family:'sans-serif';
 }
 .matn{
-
-    font-size: xx-large;
+    font-size: 35px;
     color: rgb(12, 71, 139);
     padding-right: 15px;
-    text-align: center;
-    font-family:'sans-serif';
-}
-
+    text-align: center;}
 ul li{
-    font-size: large;
+    font-size: x-large;
     color: rgb(12, 71, 139);
     padding-right: 15px;
     text-align: center;
-    font-family:'sans-serif';
     padding: 0;
 }
 @media (max-width: 768px) {

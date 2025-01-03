@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/msuighur.ttf') format('truetype');
+  }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background: rgb(53, 39, 99);
+}
+label ,h4{
+    font-size: 25px;
+    font-family: 'MyFont', serif;
+}
+h2{
+    font-size: 30px;
+    font-family: 'MyFont', serif;
+}
+.icon{
+    font-size: 25px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+.profile-card{
+    background: #fff;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relativeco;
+    color: #111;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.profile-card .profile-pic{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.profile-card .profile-pic img{
+    border-radius: 10px;
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h4{
+    background: #575656;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 8px;
+}
+.profile-details .intro .social{
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+.profile-details .intro .social img{
+    color: #ddd;
+    background-color: #222;
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.profile-details .intro .social img:hover{
+    transform: scale(1.5,1.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.profile-details .contact-info{
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+.profile-details.contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    gap: 10px;
+    text-align: center;
+}
+.contact-info .row .icon{
+    font-family: 'MyFont', serif;
+    height: 30px;
+    width: 100%;
+    line-height: 20px;
+    border-radius:5px;
+    background-color: #222;;
+    text-align: center;
+    color: #ddd;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.download-btn{
+    background: linear-gradient(45deg, #f64c57,#e21b5a);
+    color: #1d1d1d;;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    border: none;
+}
+/****aboutsection***/
+.container form{
+    width: 50%;
+    padding: 15px;
+    min-height: 400px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container form .header{
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    color: #111;
+}
+.container form .spec{
+    background: #ddd;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: black;
+}
+.container form .spec .form-control{
+    text-align: right;
+    width: 100%;
+    height: 25px;
+    background: #7f8181;
+    border-radius: 4px;
+    border: 1px solid rgb(34, 64, 90);
+    margin: 10px 0 18px 0;
+    padding: 0 10px;
+    color: white;
+}
+.container form .spec .btn{
+    width: 25%;
+    height: 34px;
+    border: none;
+    outline: none;
+    background: rgb(12, 71, 139);
+    cursor: pointer;
+    font-size: 20px;
+    color: #faf8f8;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-align: center;
+    font-family: 'MyFont', serif;
+}
+.container form .spec .btn:hover{
+    transform: scale(1 , 1.5);
+}
+/* واکنش‌گرایی برای موبایل */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .container form {
+        width: 100%;
+    }
+
+    .profile-details .intro h2 {
+        font-size: 20px;
+    }
+
+    .profile-details .intro h4 {
+        font-size: 16px;
+    }
+
+    .container form .spec .form-control {
+        height: 25px;
+        font-size: 14px;
+    }
+
+    .container form .spec .btn {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-card {
+        padding: 1rem;
+    }
+
+    .profile-details .intro h2 {
+        font-size: 18px;
+    }
+
+    .profile-details .intro h4 {
+        font-size: 14px;
+    }
+
+    .container form {
+        padding: 10px;
+    }
+}

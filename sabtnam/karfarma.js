@@ -1,16 +1,13 @@
 function validateForm() {
     const form = document.getElementById('registrationForm');
-    const firstName = form.firstName.value.trim();
-    const lastName = form.lastName.value.trim();
-    const gender = form.gender.value;
+    const coName = form.coName.value.trim();
+    const size = form.size.value;
     const email = form.email.value.trim();
     const password = form.password.value.trim();
-    const educationLevel = form.educationLevel.value;
-    const major = form.major.value.trim();
     const province = form.province.value.trim();
     const city = form.city.value.trim();
 
-    if (!firstName || !lastName || !gender || !email || !password || !educationLevel || !major || !province || !city) {
+    if (!coName || !size || !email || !password || !province || !city) {
         alert('لطفاً همه فیلدها را پر کنید');
         return false;
     }
@@ -29,7 +26,5 @@ function validateForm() {
     window.location.href = "../dashboard/dashboard.html";
     return false;
 }
-
-
 
 

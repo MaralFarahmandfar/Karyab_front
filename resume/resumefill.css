@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('../font/msuighur.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(53, 39, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  h1 {
+    background-color: #b6a7c4;
+    font-family: 'MyFont', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-section .skillfill{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .form-section #wordList{
+    margin-top: 15px;
+    margin-right: 20px;
+    border: #333;
+    background-color: #f0f0f0;
+  }
+
+  .form-section .eduinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  label {
+    font-family: 'MyFont', serif;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  .submit-btn {
+    background-color: rgb(12, 71, 139);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .add{
+    width: 90px;
+    background-color: #606160;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #9dcdec;
+  }
+  #eduList{
+    margin-top: 15px;
+    margin-right: 20px;
+    border: #333;
+    background-color: #f0f0f0;
+  }
+  .form-section .work-experience .work-experienceinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+#message{
+  color: #333;
+}
+#languagesList{
+  margin-top: 15px;
+  margin-right: 20px;
+  border: #333;
+  background-color: #f0f0f0;
+}
+#coursesList{
+  margin-top: 15px;
+  margin-right: 20px;
+  border: #333;
+  background-color: #f0f0f0;
+}
+.list{
+  margin-top: 15px;
+  margin-right: 20px;
+  border: #333;
+  background-color: #f0f0f0;
+}
+.form-section .researchinfo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.form-container .form-section label {
+  width: 145px;
+  height: 22px;
+  background-color: #b6a7c4;
+  background-blend-mode: lighten;
+  color: rgb(0, 0, 0);
+  padding-right: 20px;
+  font-size: 20px;
+  border-radius: 2px;
+}
+  @media (max-width:580){
+    .form-container form .form-section .skillfill{
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+      }
+      .form-container form .form-section .eduinfo{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form-container .form-section label {
+      width: 100%;
+    }
+}

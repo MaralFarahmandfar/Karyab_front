@@ -1,14 +1,18 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/msuighur.ttf') format('truetype');
+  }
 body{
     background-color: white;
     margin: 0;
     padding: 0;
+    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     box-sizing: border-box;
     flex-direction: column;
-    overflow-y: auto;
 }
 .main{
     display: flex;
@@ -18,7 +22,7 @@ body{
     width: 80%;
     height: auto;
     max-width: 1200px;
-    margin-bottom: auto;
+    margin-bottom: 70px;
 }
 .image{
     margin: 20px;
@@ -33,11 +37,11 @@ body{
     margin-bottom: 20px;
 }
 .parag{
-    font-size: x-large;
-
     padding-right: 15px;
     text-align:start;
-    font-family:'sans-serif';
+}
+h2{
+    color: rgb(53, 39, 99);
 }
 ul li{
     margin: 0;
@@ -45,6 +49,8 @@ ul li{
 }
 ul{
     margin: 0;
+    font-size: 25px;
+    font-family: 'MyFont', serif;
 }
 @media (max-width: 768px) {
     .main {
@@ -63,7 +69,6 @@ ul{
         width: 100%; 
         text-align: start; 
         padding: 10px;
-        font-size: large; 
     }
     ul li {
         padding: 10px 0; 

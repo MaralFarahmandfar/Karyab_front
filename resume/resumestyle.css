@@ -1,0 +1,323 @@
+*{
+    background: rgb(53, 39, 99); 
+}
+.container {
+    width: 210mm;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    background: rgb(250, 250, 252);
+    height: 100%;
+    position: relative;
+    font-family: mainfont !important;
+    line-height: 25px;
+}
+.lgbox {
+    width: 199mm;
+    float: right;
+    background-color: #ffffff;
+    height: 100%;
+    padding-right: 42px;
+    margin-bottom: 100px;
+}
+
+.lgbox {
+    width: 199mm;
+    float: right;
+    background-color: #ffffff;
+    height: 100%;
+    padding-right: 42px;
+}
+.one-col-layout {
+    float: right;
+    width: 100%;
+}
+
+.style{
+    background-image: url(https://cvbuilder.storage.c2.liara.space/Files/User_Photo/aa039611-aab7-465c-bf9b-7a6d7a0bf7fa/EZYDqreqXEa-m3ptegv3_g-682.jpg), url(https://cv360.ir/Files/User_Photo/aa039611-aab7-465c-bf9b-7a6d7a0bf7fa/EZYDqreqXEa-m3ptegv3_g-682.jpg), url(https://cvbuilder.me/Files/User_Photo/aa039611-aab7-465c-bf9b-7a6d7a0bf7fa/EZYDqreqXEa-m3ptegv3_g-682.jpg);
+}
+
+div.user-image {
+    background-image: url(/content/pic/download.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 110px;
+    width: 110px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 100%;
+    margin: AUTO;
+    display: -webkit-box;
+    position: relative;
+    z-index: 1;
+}
+.person-information {
+    min-height: 180px;
+    width: 76%;
+    float: left;
+    background: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.person-information-head {
+    width: 93%;
+    padding-bottom: 10px;
+}
+.person-information-infos {
+    width: 51%;
+    float: right;
+}
+.other-infos {
+    background-color: white;
+    color: #4a4a4a;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 9px;
+}
+.infoo {
+    padding-top: 10px;
+    border-top: 2px solid #ababab;
+    width: 95%;
+    margin-top: 5px;
+    float: right;
+}
+.infoo-head {
+    display: none;
+}
+span{
+    background-color: white;
+}
+
+.contact-item {
+    background-color: white;
+    font-size: 19px;
+    display: inline-block;
+    width: 49%;
+    color: #4a4a4a;
+}
+iv.contact-item span:first-child {
+    display: none;
+    margin-left: 9px;
+    font-size: 9px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    color: #2a9200;
+}
+.contact__city {
+    background-color: white;
+    width: 500px;
+}
+.contact-item span:nth-child(2) {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 9px;
+    color: #4a4a4a;
+}
+.property-item {
+    margin-top: 15px;
+    width: 95%;
+    float: right;
+}
+.property-item_head {
+    background-color: white;
+    text-align: right;
+    width: 100%;
+    border-bottom: 3px solid rgb(53, 39, 99);;
+    padding-top: 0;
+    height: 24px;
+}
+.property-item_head span {
+    display: block;
+    color: #f7f7f7;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background: #260846;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 21px;
+    float: right;
+    margin-top: -13px;
+    margin-left: 5px;
+    margin-right: -5px;
+}
+i {
+    font-style: italic;
+}
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.property-item_head label {
+    padding: 3px 18px;
+    background: rgb(53, 39, 99);;
+    color: #f7f7f7;
+    padding-right: 16px;
+    width: 160px;
+    float: right;
+    height: 21px;
+    position: relative;
+    font-size: 13px;
+    right: -9px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #147cbe;
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid;
+    min-width: 100px;
+}
+.property-item_body {
+    background-color: white;
+    padding: 0px 0 5px;
+    height: 100%;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.about-us {
+    background-color: white;
+    padding: 0 20px;
+    color: #4a4a4a;
+    font-size: 20px !important;
+    float: right;
+    margin-bottom: 20px !important;
+    width: 96%;
+}
+.container p.about-us, ul.history p.description {
+    white-space: pre-line;
+}
+
+.property-item_body > *:first-child {
+    margin-top: 15px;
+}
+.skill__list ul.history li:nth-child(3n+1) {
+    clear: both;
+}
+ul.history {
+    background-color: white;
+    margin-top: 5px ;
+    padding-right: 25px ;
+    box-sizing: border-box;
+    list-style-type: circle;
+    padding-right: 0;
+    float: right;
+    margin-top: 0;
+    width: 100%;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+.circle-progress {
+    display: none;
+    float: right;
+    width: 100%;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+ul.history h2.subtitle {
+    background-color: white;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #4a4a4a;
+    position: relative;
+    margin: 2px;
+}
+ul.history h3.subtitle {
+    background-color: white;
+    font-style: normal;
+    font-size: 10px;
+    margin-bottom: 0px;
+    color: #4a4a4a;
+    box-sizing: border-box;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+ul.history label.date {
+    color: #4a4a4a;
+    font-size: 9px;
+}
+label{
+    background-color: white;
+}
+ul.history li {
+    float: right;
+    list-style: none;
+    box-sizing: border-box;
+    padding-right: 0;
+    margin: 0;
+    min-height: 30px;
+}
+li {
+    background-color: white;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+ul.exp-desc {
+    padding: 0;
+    float: right;
+    padding-right: 0px;
+    width: 90%;
+    box-sizing: border-box;
+}
+ul.exp-desc li {
+    min-height: 0 !important;
+    position: relative;
+    padding-right: 12px;
+    display: block;
+    width: 100%;
+    margin: 0px !important;
+}
+.multi-line li {
+    width: 50%;
+}
+a{
+background-color: white;
+}

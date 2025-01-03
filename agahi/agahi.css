@@ -1,11 +1,14 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../font/msuighur.ttf') format('truetype');
+  }
 /* استایل کلی */
 body {
-    font-family: 'Vazir', Arial, sans-serif;
     direction: rtl;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(53, 39, 99);
     margin: 0;
     padding: 0;
-
+    height: 100%;
 }
 
 /* هدر */
@@ -13,6 +16,7 @@ body {
     background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
+    font-family: 'MyFont', serif;
 }
 
 .header h1 {
@@ -25,21 +29,23 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
+    margin-bottom: 50px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     height: 600px;
     overflow-y: scroll;
+    font-family: 'MyFont', serif;
 }
 
 .job-ad {
     background: #f4f4f4;
-
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 20px;
 }
 
 .job-ad:hover {
@@ -78,6 +84,8 @@ body {
     background: rgba(0, 0, 0, 0.6);
     justify-content: center;
     align-items: center;
+    font-family: 'Myfont',serif;
+    font-size: 20px;
 }
 
 .modal-content {
@@ -88,5 +96,6 @@ body {
     max-width: 400px;
 }
 .footer{
+    padding-bottom: 70px;
     margin-right: 10px;
 }
